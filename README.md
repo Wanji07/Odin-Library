@@ -1,6 +1,9 @@
 # Library App
 - A simple web application to manage your personal library. Users can add, view, and delete books, as well as filter them based on their reading status. The app also supports storing book data in local storage to persist information across sessions.
 
+![image](https://github.com/user-attachments/assets/9ee2e02d-68c0-496f-981d-5743b4f5fdfe)
+
+
 # Features
 - Add new books with details like title, author, language, and pages.
 - Mark books as read or unread.
