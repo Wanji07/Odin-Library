@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="/style.css">
+    <title>Library</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/Assets/University_of_The_Philippines_seal.svg.png" style="width: 80px; height: 80px;">
+            <h1>University of Philippines Library</h1>
+        </div>
+        <div class="menu-1">
+            <ul>
+                <li><img src="/Assets/settings.svg" style="width: 30px; height: 30px;"></li>
+                <li><button type="button" id="filterAll">All</button></li>
+                <li><button type="button" id="filterHaveRead">Have Read</button></li>
+                <li><button type="button" id="filterWannaRead">Wanna Read</button></li>
+            </ul>
+        </div>
+        <div class="menu-2">
+            <ul>
+                <li><img src="/Assets/sort.svg" style="width: 30px; height: 30px;"></li>
+                <li><button type="button" id="filterTitle">Title</button></li>
+                <li><button type="button" id="filterAuthor">Author</button></li>
+            </ul>
+        </div>
+        <div class="miscellaneous-button">
+            <button type="button"><img src="/Assets/account-icon.svg"></button>
+        </div>
+    </nav>
+    <section id="library">
+        <div class="new-book">
+            <button type="button" id="newBook">New Book</button>
+        </div>
+        <div class="prompt" id="prompt">
+            <button type="button" id="cancelBtn"><img src="/Assets/exit-button.svg"></button>
+            <h1 style="text-align: center;">Add a new book!</h1>
+            <form>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required autocomplete="off">
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required autocomplete="off">
+                <label for="author">Language:</label>
+                <input type="text" id="language" name="language" required autocomplete="off">
+                <label for="pages">Pages:</label>
+                <input type="number" id="pages" name="pages" required autocomplete="off">
+                <h2 style="text-align: center;">Have you read this book?</h2>
+                <div class="haveRead-section">
+                    <div class="haveRead-section-1">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="yes" name="read" value="Yes">
+                    </div>
+                    <div class="haveRead-section-2">
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="read" value="No">
+                    </div>
+                </div>
+                <button type="button" id="confirmBtn">Confirm</button>
+            </form>
+        </div>
+        <!--BOOK LIBRARY-->
+        <!--
+        <div class="book-card">
+            <div class="card-header">
+                <h1><img src="/Assets/title.svg">Title</h1>
+            </div>
+            <hr class="card-divider">
+            <div class="card-body">
+                <h2><img src="/Assets/author.svg">Author</h2>
+                <h2><img src="/Assets/language.svg">Language</h2>
+                <h2><img src="/Assets/pages.svg">Pages</h2>
+                <button class="card-read" id="card-read" type="button"><img src="/Assets/read.svg"></button>
+            </div>
+            <button class="delete-btn" id="delete-btn" type="button"><img src="/Assets/delete.svg"></button>
+        </div>
+        <div class="book-add-card">
+            <img src="/Assets/add.svg" id="add-icon">
+            <button type="button" id="add-btn"><img src="/Assets/add-book.svg">Add book</button>
+        </div>
+        -->
+    </section>
+    <div class="dark-background"></div>
+    <script src="/script.js"></script>
+</body>
+</html>
